@@ -6,58 +6,122 @@
     <link rel="stylesheet" href="./src/style.css">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/c5266611a7.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>CSS Flex</title>
 </head>
 <body>
-    <h1>A Quick recap to CSS</h1>
+    <h1>A Quick guide to CSS Flex</h1>
     
-    <div class="show">
-    <div class="attributes">
-        <div class="display">
-            <h1 id="id4">display</h1>
-            <div class="item">
-                <a href="#" onclick="df()" id="id1">flex</a>
-                <i class="fa-solid fa-copy" onclick="cdf()"></i>
-            </div>
-            <div class="item">
-                <a href="#" onclick="db()" id="id2"> block</a>
-                <i class="fa-solid fa-copy" onclick="cdb()"></i>
-            </div>
-            <div class="item">
-                <a href="#" onclick="switchCase()" id="id3">swdwd</a>
-                <i class="fa-solid fa-copy" onclick="copyToClipboard('#id3')"></i>
-            </div>
+  <div class="show">
+    <div class="attributes1">
+        <div class="display" id="a">
+            <h1 onclick="hide1()" id="aa">display</h1>
+            <div id="i" style="display: none;">
         </div>
-        <div class="display">
-            <h1 id="id">justify-content</h1>
-            <div class="item">
-                <a href="#" onclick="jcfs()" id="id3">flex-start</a>
-                <i class="fa-solid fa-copy" onclick="cjcfs()"></i>
-            </div>
-            <div class="item">
-                <a href="#" onclick="jcfe()" id="id2"> flex-end</a>
-                <i class="fa-solid fa-copy" onclick="cjcfe()"></i>
-            </div>
-            <div class="item">
-                <a href="#" onclick="jcc()" id="id1">center</a>
-                <i class="fa-solid fa-copy" onclick="cjcc()"></i>
-            </div>
-            <div class="item">
-                <a href="#" onclick="jcse()" id="id1">space-evenly</a>
-                <i class="fa-solid fa-copy" onclick="cjcse()"></i>
-            </div>
-            <div class="item">
-                <a href="#" onclick="jcsb()" id="id1">between</a>
-                <i class="fa-solid fa-copy" onclick="cjcsb()"></i>
-            </div>
+        </div>
+        <div class="display" id="b">
+            <h1 onclick="hide2()" id="bb">justify-content</h1>
+            <div id="i" style="display: none;">
+        </div>
+        </div>
+        <div class="display" id="c">
+            <h1 onclick="hide3()" id="cc">align-items</h1>
+            <div id="i" style="display: none;">
         </div>
     </div>
-
+        <div class="display" id="d">
+            <h1 onclick="hide4()" id="dd">align-content</h1>
+            <div id="i" style="display: none;">
+        </div>
+    </div>
+    </div>
+    <div class="attributes2">
+            <div class="display2">
+                <div id="toggleSwitch1" style="display: none;">
+                <h1 onclick="hide1()">display</h1>
+                <div class="item">
+                    <a href="#" onclick="df()" id="id1">flex</a>
+                    <i class="fa-solid fa-copy" onclick="cdf()"></i>
+                </div>
+                <div class="item">
+                    <a href="#" onclick="db()" id="id2"> block</a>
+                    <i class="fa-solid fa-copy" onclick="cdb()"></i>
+                </div>
+                <div class="item">
+                    <a href="#" onclick="switchCase()" id="id3">swdwd</a>
+                    <i class="fa-solid fa-copy" onclick="copyToClipboard('#id3')"></i>
+                </div>
+                </div>
+                <div id="toggleSwitch2" style="display: none;">
+                <h1 onclick="hide2()">justify-content</h1>
+                <div class="item">
+                    <a href="#" onclick="jcfs()" id="id3">flex-start</a>
+                    <i class="fa-solid fa-copy" onclick="cjcfs()"></i>
+                </div>
+                <div class="item">
+                    <a href="#" onclick="jcfe()" id="id2"> flex-end</a>
+                    <i class="fa-solid fa-copy" onclick="cjcfe()"></i>
+                </div>
+                <div class="item">
+                    <a href="#" onclick="jcc()" id="id1">center</a>
+                    <i class="fa-solid fa-copy" onclick="cjcc()"></i>
+                </div>
+                <div class="item">
+                    <a href="#" onclick="jcse()" id="id1">space-evenly</a>
+                    <i class="fa-solid fa-copy" onclick="cjcse()"></i>
+                </div>
+                <div class="item">
+                    <a href="#" onclick="jcsb()" id="id1">space-between</a>
+                    <i class="fa-solid fa-copy" onclick="cjcsb()"></i>
+                </div>
+                <div class="item">
+                    <a href="#" onclick="jcsa()" id="id1">space-around</a>
+                    <i class="fa-solid fa-copy" onclick="cjcsa()"></i>
+                </div>
+                </div>
+                <div id="toggleSwitch3" style="display: none;">
+                <h1 onclick="hide3()">align-items</h1>
+                <div class="item">
+                    <a href="#" onclick="aifs()" id="id3">flex-start</a>
+                    <i class="fa-solid fa-copy" onclick="caifs()"></i>
+                </div>
+                <div class="item">
+                    <a href="#" onclick="aife()" id="id2"> flex-end</a>
+                    <i class="fa-solid fa-copy" onclick="caife()"></i>
+                </div>
+                <div class="item">
+                    <a href="#" onclick="aifst()" id="id1">stretch</a>
+                    <i class="fa-solid fa-copy" onclick="caifst()"></i>
+                </div>
+                <div class="item">
+                    <a href="#" onclick="aic()" id="id1">center</a>
+                    <i class="fa-solid fa-copy" onclick="caic()"></i>
+                </div>
+                </div>
+                <div id="toggleSwitch4" style="display: none;">
+                <h1 onclick="hide4()">align-content</h1>
+                <div class="item">
+                    <a href="#" onclick="acfs()" id="id3">flex-start</a>
+                    <i class="fa-solid fa-copy" onclick="cacfs()"></i>
+                </div>
+                <div class="item">
+                    <a href="#" onclick="acfe()" id="id2"> flex-end</a>
+                    <i class="fa-solid fa-copy" onclick="cacfe()"></i>
+                </div>
+                <div class="item">
+                    <a href="#" onclick="acsb()" id="id1">space-between</a>
+                    <i class="fa-solid fa-copy" onclick="cacsb()"></i>
+                </div>
+                <div class="item">
+                    <a href="#" onclick="acc()" id="id1">center</a>
+                    <i class="fa-solid fa-copy" onclick="cacc()"></i>
+                </div>
+                </div>
+            </div>
+        </div>
+    
 
 
     <div id="screen" onclick="reload()">
-        <p></p>
-        <p></p>
         <p></p>
         <p></p>
         <p></p>
@@ -69,8 +133,8 @@
         <i class="fa-solid fa-circle-small"></i>
         <i class="fa-solid fa-circle-small"></i>
         <i class="fa-solid fa-circle-small"></i>
-    </div> -->
-    </div>
+    </div> 
+    </div>-->
 </body>
 <script src="./src/app.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
